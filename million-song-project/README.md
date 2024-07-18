@@ -1,11 +1,10 @@
 # Mini Music Project ETL
 ## Table of Contents
 1. [Overview](#overview)
-2. [DDL scripts](#ddl-scripts)
-3. [Design Diagram](#design-diagram)
-4. [Discussion](#Discussion-of-why-datelake-and-datawarehouse)
-5. [ETL Pipeline](#ETLPipeline)
-6. [Summary](#Summary)
+2. [DDL scripts](#ddl-scripts-for-snowflake)
+3. [Discussion](#Discussion-of-why-datelake-and-datawarehouse)
+4. [ETL Pipeline](#ETLPipeline)
+5. [Summary](#Summary)
 
 ## Overview
 **Objective:** The Primary objective of this project is to develop a robust ETL pipeline for Sparkify, A music Streaming startup to facilitate the analysis of user activity and song play data. The project aims to migrate existing data warehouse to a data lake setup, leveraging Snowflake for enhances scalability and performance.
