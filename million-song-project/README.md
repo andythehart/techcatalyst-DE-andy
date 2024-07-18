@@ -66,7 +66,7 @@ create or replace TRANSIENT TABLE TECHCATALYST_DE.andy.SONGPLAYS_FACT (
 );
 ```
 ## Design Diagram
-![dataArchitechtureDiagram](images\Image20240718142557.jpg)
+![dataArchitechtureDiagram](million-song-project/images/Image20240718142557.jpg)
 ## Discussion
 The purpose of the datalake + datawarehouse is to allow the starts to scale and have flexibility as well as being being able to do their data analytics to find meaningful insights
 ## ETL Pipeline
