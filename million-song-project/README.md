@@ -3,12 +3,15 @@
 1. [Overview](#overview)
 2. [DDL scripts](#ddl-scripts)
 3. [Design Diagram](#design-diagram)
-4. [Discussion](#Discussion)
+4. [Discussion](#Discussion-of-why-datelake-and-datawarehouse)
 5. [ETL Pipeline](#ETLPipeline)
 6. [Summary](#Summary)
 
 ## Overview
 **Objective:** The Primary objective of this project is to develop a robust ETL pipeline for Sparkify, A music Streaming startup to facilitate the analysis of user activity and song play data. The project aims to migrate existing data warehouse to a data lake setup, leveraging Snowflake for enhances scalability and performance.
+
+## Data Model of Snowflake Schema
+![dataArchitechtureDiagram](images/Image20240718151759.jpg)
 
 ## DDL Scripts For snowflake
 ```sql
@@ -65,10 +68,10 @@ create or replace TRANSIENT TABLE TECHCATALYST_DE.andy.SONGPLAYS_FACT (
 
 );
 ```
-## Design Diagram
-![dataArchitechtureDiagram](images/Image20240718142557.jpg)
-## Discussion
+
+## Discussion of why datelake and datawarehouse
 The purpose of the datalake + datawarehouse is to allow the starts to scale and have flexibility as well as being being able to do their data analytics to find meaningful insights
 ## ETL Pipeline
+![dataArchitechtureDiagram](images/Image20240718142557.jpg)
 The ETL process for Sparkify extracts song data from JSON files in S3 that was taken from the million song dataset, transforms the data by cleaning and normalizing it,  and then reloading it into S3 with structured naming and categorization. Finally, the data is staged and loaded into Snowflake tables for detailed analysis and reporting.
 ## Summary
