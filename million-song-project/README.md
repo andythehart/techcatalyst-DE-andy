@@ -75,3 +75,4 @@ The purpose of the datalake + datawarehouse is to allow the starts to scale and 
 ![dataArchitechtureDiagram](images/Image20240718142557.jpg)
 The ETL process for Sparkify extracts song data from JSON files in S3 that was taken from the million song dataset, transforms the data by cleaning and normalizing it,  and then reloading it into S3 with structured naming and categorization. Finally, the data is staged and loaded into Snowflake tables for detailed analysis and reporting.
 ## Summary
+Developing a robust ETL pipeline for Sparkify, A music Streaming startup to facilitate the analysis of user activity and song play data. The prupose is to migrate existing data warehouse to a data lake setup, leveraging Snowflake for enhances scalability and performance.
