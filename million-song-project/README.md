@@ -10,7 +10,7 @@
 ## Overview
 **Objective:** The Primary objective of this project is to develop a robust ETL pipeline for Sparkify, A music Streaming startup to facilitate the analysis of user activity and song play data. The project aims to migrate existing data warehouse to a data lake setup, leveraging Snowflake for enhances scalability and performance.
 
-## DDL Scripts
+## DDL Scripts For snowflake
 ```sql
 create or replace TRANSIENT TABLE TECHCATALYST_DE.andy.USER_DIM (
 
