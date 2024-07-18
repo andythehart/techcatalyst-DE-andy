@@ -66,6 +66,9 @@ create or replace TRANSIENT TABLE TECHCATALYST_DE.andy.SONGPLAYS_FACT (
 );
 ```
 ## Design Diagram
+![dataArchitechtureDiagram](images\Image20240718142557.jpg)
 ## Discussion
+The purpose of the datalke is to allow the starts to scale and have flexibility as well as being being able to do their data analytics to find meaningful insights
 ## ETL Pipeline
+The ETL process for Sparkify extracts song data from JSON files in S3 that was taken from the million song dataset, transforms the data by cleaning and normalizing it,  and then reloading it into S3 with structured naming and categorization. Finally, the data is staged and loaded into Snowflake tables for detailed analysis and reporting.
 ## Summary
